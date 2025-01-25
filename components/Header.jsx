@@ -90,7 +90,7 @@ const Header = () => {
         <motion.a
   {...animationSettings}
   transition={{ ...animationSettings.transition, delay: 1.2 }}
-  href={assets.sampleresume} // Correct usage of dynamic file reference
+ href={assets.sampleresume || "/sample-resume.pdf"}
   download  // This ensures the browser downloads the file instead of opening it
   className="inline-block px-6 py-3 border border-gray-300 rounded-full bg-white dark:text-black"
 >
