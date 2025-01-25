@@ -1,4 +1,5 @@
-import { assets } from '@/assets/assets'; // Import assets
+import { assets } from '../assets/assets'; // Adjust the path as needed
+
 import Image from 'next/image'; // Import Image component from Next.js
 import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
