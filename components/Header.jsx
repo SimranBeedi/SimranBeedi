@@ -88,16 +88,18 @@ const Header = () => {
         </motion.a>
 
         {/* Download Resume Button */}
-        <motion.a
-          {...animationSettings}
-          transition={{ ...animationSettings.transition, delay: 1.2 }} // Add delay
-          href="/assets/public/sample-resume.pdf"
-          download
-          className="inline-block px-6 py-3 border border-gray-300 rounded-full bg-white dark:text-black"
-        >
-          Download Resume
-          <Image src={assets.download_icon || "/fallback-download.png"} alt="Download Icon" className="inline-block w-4 ml-2" />
-        </motion.a>
+       <motion.a
+  {...animationSettings}
+  transition={{ ...animationSettings.transition, delay: 1.2 }}
+  href="/sample-resume.pdf"
+  download
+  className="inline-block px-6 py-3 border border-gray-300 rounded-full bg-white dark:text-black"
+  aria-label="Download Resume"
+>
+  Download Resume
+  <Image src={assets.download_icon || "/fallback-download-icon.png"} alt="Download Icon" className="inline-block w-4 ml-2" />
+</motion.a>
+
       </div>
     </div>
   );
