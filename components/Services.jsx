@@ -32,7 +32,7 @@ const Services = () => {
           transition={{ duration: 0.5, delay: 0.7 }}
          
       className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quibusdam cupiditate atque voluptate modi perspiciatis voluptates maiores quae inventore pariatur doloremque neque asperiores natus optio dolorum consequatur esse est eveniet.
+        I offer comprehensive web development solutions, including full-stack development, front-end design, back-end server-side logic, and robust database management. Whether you're looking for a custom WordPress site or a scalable web application, I use the latest technologies to create dynamic, user-friendly websites tailored to your needs.
       </motion.p>
 
       {/* Services Grid */}
