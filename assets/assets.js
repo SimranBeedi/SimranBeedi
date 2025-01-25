@@ -105,7 +105,7 @@ export const workData = [
         
             title: 'Responsive Portfolio Website',
             description: 'Built a dynamic and responsive portfolio for showcasing projects',
-            bgImage: './assets/public/work-1.png',
+            bgImage: '/assets/work-1.png
             link: 'https://yourportfolio.com', // Replace with your live project or GitHub repo link
           
           
