@@ -87,17 +87,16 @@ const Header = () => {
           <Image src={assets.right_arrow_white || "/fallback-arrow.png"} alt="Right Arrow" className="inline-block w-4 ml-2" />
         </motion.a>
 
-        <motion.a
+       <motion.a
   {...animationSettings}
   transition={{ ...animationSettings.transition, delay: 1.2 }}
- href={assets.sampleresume || "/sample-resume.pdf"}
+  href="/sample-resume.pdf" // Correct usage of dynamic file reference
   download  // This ensures the browser downloads the file instead of opening it
   className="inline-block px-6 py-3 border border-gray-300 rounded-full bg-white dark:text-black"
 >
   Download Resume
   <Image src={assets.download_icon || "/fallback-download.png"} alt="Download Icon" className="inline-block w-4 ml-2" />
 </motion.a>
-
 
       </div>
     </div>
