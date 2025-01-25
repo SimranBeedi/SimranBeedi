@@ -54,6 +54,8 @@ export const assets = {
     database,
     mysql,
     frontend_icon,
+    
+    sampleresume: "/resume.pdf", 
     backend_icon,
     python,
     github,
