@@ -41,8 +41,11 @@ import github from './github.png';
 import python from './python.png';
 import xampp from './xampp.png';
 import fullstack from './fullstack.png';
+
 import database from './database.png';
+
 import frontend_icon from './frontend_icon.png';
+
 import backend_icon from './backend_icon.png';
 import wordpress from './wordpress.png';
 import bootstrap from './bootstrap.png';
@@ -95,6 +98,76 @@ export const assets = {
   right_arrow,
   send_icon,
   right_arrow_bold,
-  right_arrow_bold_dark,
+  right_arrow_bold_dark
 };
+
+export const workData = [
+  {
+    title: 'Responsive Portfolio Website',
+    description: 'Built a dynamic and responsive portfolio for showcasing projects',
+    bgImage: '/work-1.png', // Ensure the path to images is correct
+    link: 'https://yourportfolio.com',
+  },
+  {
+    title: 'Construction Material Portal',
+    description: 'A web app for managing construction, workers, and products.',
+    bgImage: '/work-2.png', // Ensure the path to images is correct
+    link: 'https://cmpsimranb.zya.me/?i=1',
+  },
+  {
+    title: 'BuyDirect E-commerce Platform',
+    description: 'Secure platform, modular shop management, and responsive design.',
+    bgImage: '/work-3.png', // Ensure the path to images is correct
+    link: 'https://yourbuydirectplatform.com',
+  },
+  {
+    title: 'Agro Global Export',
+    description: 'Web-based system for managing export data of agricultural products with WordPress.',
+    bgImage: '/work-4.png', // Ensure the path to images is correct
+    link: 'https://youragroexportplatform.com',
+  },
+];
+
+export const serviceData = [
+  { 
+    icon: assets.fullstack, // Add an appropriate icon
+    title: 'Full-Stack Development',
+    description: 'Develop complete web solutions from front-end interfaces to back-end systems using technologies like React, PHP, Python, and MySQL.',
+    link: ''
+  },
+  { 
+    icon: assets.frontend_icon, // Add an appropriate icon
+    title: 'Front-End Development',
+    description: 'Create responsive and dynamic user interfaces with HTML, CSS, JavaScript, and React.',
+    link: ''
+  },
+  { 
+    icon: assets.backend_icon, // Add an appropriate icon
+    title: 'Back-End Development',
+    description: 'Build efficient server-side applications and APIs using PHP, Python, and integrate with MySQL databases.',
+    link: ''
+  },
+  { 
+    icon: assets.database, // Add an appropriate icon
+    title: 'Database Management',
+    description: 'Design and manage scalable MySQL databases, ensuring optimal performance for your web applications.',
+    link: ''
+  },
+  { 
+    icon: assets.wordpress, // Add an appropriate icon
+    title: 'WordPress Development',
+    description: 'Create and customize WordPress websites, including themes, plugins, and content management.',
+    link: ''
+  },
+];
+
+export const infoList = [
+  { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, PHP, Python, Flask, MySQL, Bootstrap, React Js, Next Js' },
+  { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Master of Computer Applications' },
+  { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built 5 projects' }
+];
+
+export const toolsData = [
+  assets.vscode, assets.xampp, assets.python, assets.bootstrap, assets.github, assets.flask, assets.mysql, assets.wordpress, assets.git
+];
 
