@@ -102,33 +102,37 @@ export const assets = {
     right_arrow_bold_dark
 };
 
+import work1 from '../assets/work-1.png';
+import work2 from '../assets/work-2.png';
+import work3 from '../assets/work-3.png';
+import work4 from '../assets/work-4.png';
+
 export const workData = [
     {
         title: 'Responsive Portfolio Website',
         description: 'Built a dynamic and responsive portfolio for showcasing projects',
-        bgImage: `${process.env.PUBLIC_URL}/work-1.png`, // ✅ Fix: Use PUBLIC_URL
+        bgImage: work1, // ✅ Imported image
         link: 'https://yourportfolio.com',
     },
     {
         title: 'Construction Material Portal',
         description: 'A web app for managing construction, workers, and products.',
-        bgImage: `${process.env.PUBLIC_URL}/work-2.png`,
+        bgImage: work2,
         link: 'https://cmpsimranb.zya.me/?i=1',
     },
     {
         title: 'BuyDirect E-commerce Platform',
         description: 'Secure platform, modular shop management, and responsive design.',
-        bgImage: `${process.env.PUBLIC_URL}/work-3.png`,
+        bgImage: work3,
         link: 'https://yourbuydirectplatform.com',
     },
     {
         title: 'Agro Global Export',
         description: 'Web-based system for managing export data of agricultural products with WordPress.',
-        bgImage: `${process.env.PUBLIC_URL}/work-4.png`,
+        bgImage: work4,
         link: 'https://youragroexportplatform.com',
     },
 ];
-
 
 export const serviceData = [
     { 
