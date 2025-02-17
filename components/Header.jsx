@@ -87,17 +87,17 @@ const Header = () => {
           Contact Me
           <Image src={assets.right_arrow_white || "/fallback-arrow.png"} alt="Right Arrow" className="inline-block w-4 ml-2" />
         </motion.a>
-
-       <motion.a
-  {...animationSettings}
-  transition={{ ...animationSettings.transition, delay: 1.2 }}
-  href={process.env.PUBLIC_URL + '/sample-resume.pdf'} // Adjust path dynamically for deployment
-  download
-  className="inline-block px-6 py-3 border border-gray-300 rounded-full bg-white dark:text-black"
+<motion.a
+   {...animationSettings}
+   transition={{ ...animationSettings.transition, delay: 1.2 }}
+   href="/sample-resume.pdf" // Ensure this points to the root of the public directory
+   download
+   className="inline-block px-6 py-3 border border-gray-300 rounded-full bg-white dark:text-black"
 >
-  Download Resume
-  <Image src={assets.download_icon || "/fallback-download.png"} alt="Download Icon" className="inline-block w-4 ml-2" />
+   Download Resume
+   <Image src={assets.download_icon || "/fallback-download.png"} alt="Download Icon" className="inline-block w-4 ml-2" />
 </motion.a>
+
 
 
       </div>
