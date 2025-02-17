@@ -53,16 +53,15 @@ const Work = ({ isDarkMode }) => {
             transition={{ duration: 0.3 }}
             key={index}
             className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-            style={{ backgroundImage: url(${project.bgImage}) }}
+            style={{ backgroundImage: `url(${project.bgImage})` }}  // Use relative path
           >
             {/* Project Details */}
             <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
               <div>
                 <a
-                  target='_blank'
-                  href={project.link || '#'}
+                  target='_blank'   href={project.link || '#'}
                   className="block"
-                  aria-label={View details of ${project.title}}
+                  aria-label={`View details of ${project.title}`}
                 >
                   <h2 className="font-semibold text-lg group-hover:text-blue-500 transition-colors duration-300">
                     {project.title}
@@ -77,11 +76,9 @@ const Work = ({ isDarkMode }) => {
                 aria-label="Send icon"
               >
                 <Image
-                  src={assets.send_icon || '/assets/send_icon.svg'}  // Fallback path
+                  src={assets.send_icon} // Ensure `send_icon` exists in `assets`
                   alt="send_icon"
                   className="w-5"
-                  width={24}  // Optional width
-                  height={24} // Optional height
                 />
               </div>
             </div>
@@ -102,8 +99,6 @@ const Work = ({ isDarkMode }) => {
           src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold}
           alt="Right arrow"
           className="w-4"
-          width={16}  // Optional width
-          height={16} // Optional height
         />
       </motion.a>
     </motion.div>
