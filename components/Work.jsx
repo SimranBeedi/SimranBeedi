@@ -59,7 +59,8 @@ const Work = ({ isDarkMode }) => {
             <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
               <div>
                 <a
-                  target='_blank'   href={project.link || '#'}
+                  target='_blank'
+                  href={project.link || '#'}
                   className="block"
                   aria-label={`View details of ${project.title}`}
                 >
