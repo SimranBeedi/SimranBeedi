@@ -105,7 +105,7 @@ export const workData = [
     title: 'Responsive Portfolio Website',
     description: 'Built a dynamic and responsive portfolio for showcasing projects',
     bgImage: 'https://SimranBeedi.github.io/SimranBeedi/work-1.png',  // Correct URL format
-    link: 'https://yourportfolio.com',
+    link: 'https://simranbeedi.github.io/SimranBeedi/',
   },
   {
     title: 'Construction Material Portal',
