@@ -77,9 +77,11 @@ const Work = ({ isDarkMode }) => {
                 aria-label="Send icon"
               >
                 <Image
-                  src={assets.send_icon} // Ensure `send_icon` exists in `assets`
+                  src={assets.send_icon || '/assets/send_icon.svg'}  // Fallback path
                   alt="send_icon"
                   className="w-5"
+                  width={24}  // Optional width
+                  height={24} // Optional height
                 />
               </div>
             </div>
@@ -100,6 +102,8 @@ const Work = ({ isDarkMode }) => {
           src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold}
           alt="Right arrow"
           className="w-4"
+          width={16}  // Optional width
+          height={16} // Optional height
         />
       </motion.a>
     </motion.div>
