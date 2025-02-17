@@ -1,4 +1,4 @@
-import { workData } from '@/assets/assets'; // Ensure workData is being imported correctly
+import { assets, workData } from '@/assets/assets'; // Ensure the path is correct
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
@@ -53,7 +53,7 @@ const Work = ({ isDarkMode }) => {
             transition={{ duration: 0.3 }}
             key={index}
             className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-            style={{ backgroundImage: `url(${project.bgImage})` }}  // Using bgImage directly
+            style={{ backgroundImage: url(${project.bgImage}) }}
           >
             {/* Project Details */}
             <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
@@ -62,7 +62,7 @@ const Work = ({ isDarkMode }) => {
                   target='_blank'
                   href={project.link || '#'}
                   className="block"
-                  aria-label={`View details of ${project.title}`}
+                  aria-label={View details of ${project.title}}
                 >
                   <h2 className="font-semibold text-lg group-hover:text-blue-500 transition-colors duration-300">
                     {project.title}
@@ -77,11 +77,11 @@ const Work = ({ isDarkMode }) => {
                 aria-label="Send icon"
               >
                 <Image
-                  src="/assets/send_icon.svg"  // Fixed path for send icon
+                  src={assets.send_icon || '/assets/send_icon.svg'}  // Fallback path
                   alt="send_icon"
                   className="w-5"
-                  width={24}
-                  height={24}
+                  width={24}  // Optional width
+                  height={24} // Optional height
                 />
               </div>
             </div>
@@ -99,11 +99,11 @@ const Work = ({ isDarkMode }) => {
       >
         Show more
         <Image
-          src={isDarkMode ? '/assets/right_arrow_bold_dark.svg' : '/assets/right_arrow_bold.svg'} // Correct path for arrows
+          src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold}
           alt="Right arrow"
           className="w-4"
-          width={16}
-          height={16}
+          width={16}  // Optional width
+          height={16} // Optional height
         />
       </motion.a>
     </motion.div>
