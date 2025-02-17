@@ -24,10 +24,10 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth">
       <head>
         {/* Favicon links */}
-        <link rel="icon" href="/public/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/public/favicon-16x16.png" sizes="16x16">
-<link rel="icon" href="/public/favicon-32x32.png" sizes="32x32">
-
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" href="/favicon-32x32.png" sizes="32x32" />
+        
         <meta name="theme-color" content="#ffffff" />
       </head>
       <body
