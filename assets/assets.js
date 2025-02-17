@@ -41,133 +41,60 @@ import github from './github.png';
 import python from './python.png';
 import xampp from './xampp.png';
 import fullstack from './fullstack.png';
-
 import database from './database.png';
-
 import frontend_icon from './frontend_icon.png';
-
 import backend_icon from './backend_icon.png';
 import wordpress from './wordpress.png';
 import bootstrap from './bootstrap.png';
+
 export const assets = {
-    user_image,
-    database,
-    mysql, 
-    frontend_icon,
-    backend_icon,
-    python,
-    github,
-    xampp,
-    bootstrap,
-    flask,
-    fullstack,
-    wordpress,
-    code_icon,
-    code_icon_dark,
-    edu_icon,
-    edu_icon_dark,
-    project_icon,
-    project_icon_dark,
-    vscode,
-    firebase,
-    figma,
-    git,
-    mongodb,
-    right_arrow_white,
-    logo,
-    logo_dark,
-    mail_icon,
-    mail_icon_dark,
-    profile_img,
-    download_icon,
-    hand_icon,
-    header_bg_color,
-    moon_icon,
-    sun_icon,
-    arrow_icon,
-    arrow_icon_dark,
-    menu_black,
-    menu_white,
-    close_black,
-    close_white,
-    web_icon,
-    mobile_icon,
-    ui_icon,
-    graphics_icon,
-    right_arrow,
-    send_icon,
-    right_arrow_bold,
-    right_arrow_bold_dark
+  user_image,
+  database,
+  mysql,
+  frontend_icon,
+  backend_icon,
+  python,
+  github,
+  xampp,
+  bootstrap,
+  flask,
+  fullstack,
+  wordpress,
+  code_icon,
+  code_icon_dark,
+  edu_icon,
+  edu_icon_dark,
+  project_icon,
+  project_icon_dark,
+  vscode,
+  firebase,
+  figma,
+  git,
+  mongodb,
+  right_arrow_white,
+  logo,
+  logo_dark,
+  mail_icon,
+  mail_icon_dark,
+  profile_img,
+  download_icon,
+  hand_icon,
+  header_bg_color,
+  moon_icon,
+  sun_icon,
+  arrow_icon,
+  arrow_icon_dark,
+  menu_black,
+  menu_white,
+  close_black,
+  close_white,
+  web_icon,
+  mobile_icon,
+  ui_icon,
+  graphics_icon,
+  right_arrow,
+  send_icon,
+  right_arrow_bold,
+  right_arrow_bold_dark,
 };
 
-export const workData = [
-    {
-        title: 'Responsive Portfolio Website',
-        description: 'Built a dynamic and responsive portfolio for showcasing projects',
-        bgImage: `${process.env.PUBLIC_URL}/work-1.png`, // Correct usage for React
-        link: 'https://yourportfolio.com',
-    },
-    {
-        title: 'Construction Material Portal',
-        description: 'A web app for managing construction, workers, and products.',
-        bgImage: `${process.env.PUBLIC_URL}/work-2.png`,
-        link: 'https://cmpsimranb.zya.me/?i=1',
-    },
-    {
-        title: 'BuyDirect E-commerce Platform',
-        description: 'Secure platform, modular shop management, and responsive design.',
-        bgImage: `${process.env.PUBLIC_URL}/work-3.png`,
-        link: 'https://yourbuydirectplatform.com',
-    },
-    {
-        title: 'Agro Global Export',
-        description: 'Web-based system for managing export data of agricultural products with WordPress.',
-        bgImage: `${process.env.PUBLIC_URL}/work-4.png`,
-        link: 'https://youragroexportplatform.com',
-    },
-];
-
-
-export const serviceData = [
-    { 
-        icon: assets.fullstack, // Add an appropriate icon
-        title: 'Full-Stack Development', 
-        description: 'Develop complete web solutions from front-end interfaces to back-end systems using technologies like React, PHP, Python, and MySQL.', 
-        link: '' 
-    },
-    { 
-        icon: assets.frontend_icon, // Add an appropriate icon
-        title: 'Front-End Development', 
-        description: 'Create responsive and dynamic user interfaces with HTML, CSS, JavaScript, and React.', 
-        link: '' 
-    },
-    { 
-        icon: assets.backend_icon, // Add an appropriate icon
-        title: 'Back-End Development', 
-        description: 'Build efficient server-side applications and APIs using PHP, Python, and integrate with MySQL databases.', 
-        link: '' 
-    },
-    { 
-        icon: assets.database, // Add an appropriate icon
-        title: 'Database Management', 
-        description: 'Design and manage scalable MySQL databases, ensuring optimal performance for your web applications.', 
-        link: '' 
-    },
-    { 
-        icon: assets.wordpress, // Add an appropriate icon
-        title: 'WordPress Development', 
-        description: 'Create and customize WordPress websites, including themes, plugins, and content management.', 
-        link: '' 
-    },
-];
-
-
-export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, PHP,Python,Flask,MYSQL ,BootStrap,  React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Master of Computer Applications' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built  5 projects' }
-];
-
-export const toolsData = [
-    assets.vscode, assets.xampp,assets.python,assets.bootstrap,assets.github, assets.flask,assets.mysql, assets.wordpress, assets.git
-];
