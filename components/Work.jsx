@@ -59,8 +59,7 @@ const Work = ({ isDarkMode }) => {
             <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
               <div>
                 <a
-                  target="_blank"
-                  href={project.link || '#'} // Make sure 'link' exists for the project
+                  target='_blank'   href={project.link || '#'}
                   className="block"
                   aria-label={`View details of ${project.title}`}
                 >
@@ -76,13 +75,10 @@ const Work = ({ isDarkMode }) => {
                 className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
                 aria-label="Send icon"
               >
-                {/* Ensure send_icon exists in assets */}
                 <Image
-                  src={assets.send_icon || '/default-send-icon.png'} // Fallback if icon doesn't exist
+                  src={assets.send_icon} // Ensure `send_icon` exists in `assets`
                   alt="send_icon"
                   className="w-5"
-                  width={20} // Added width and height to optimize image loading
-                  height={20}
                 />
               </div>
             </div>
@@ -103,8 +99,6 @@ const Work = ({ isDarkMode }) => {
           src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold}
           alt="Right arrow"
           className="w-4"
-          width={16} // Added width and height for optimization
-          height={16}
         />
       </motion.a>
     </motion.div>
