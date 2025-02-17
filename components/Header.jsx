@@ -90,7 +90,8 @@ const Header = () => {
  <motion.a
   {...animationSettings}
   transition={{ ...animationSettings.transition, delay: 1.2 }}
-  href="https://simranbeedi.github.io/SimranBeedi/simran_resume.pdf"
+ href="/SimranBeedi/simran_resume.pdf"
+
   download="simran_resume.pdf"
   className="inline-block px-6 py-3 border border-gray-300 rounded-full bg-white dark:text-black"
 >
