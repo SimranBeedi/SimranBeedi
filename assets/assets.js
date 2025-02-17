@@ -41,18 +41,19 @@ import github from './github.png';
 import python from './python.png';
 import xampp from './xampp.png';
 import fullstack from './fullstack.png';
+
 import database from './database.png';
+
 import frontend_icon from './frontend_icon.png';
+
 import backend_icon from './backend_icon.png';
 import wordpress from './wordpress.png';
 import bootstrap from './bootstrap.png';
-
 export const assets = {
     user_image,
     database,
-    mysql,
+    mysql, 
     frontend_icon,
-    sampleresume: "/resume.pdf", 
     backend_icon,
     python,
     github,
@@ -100,33 +101,31 @@ export const assets = {
 };
 
 export const workData = [
-    {
-        title: 'Responsive Portfolio Website',
-        description: 'Built a dynamic and responsive portfolio for showcasing projects',
-        bgImage: '/work-1.png', // Correct path
-        link: 'https://yourportfolio.com',
-    },
-    {
-        title: 'Construction Material Portal',
-        description: 'A web app for managing construction, workers, and products.',
-        bgImage: '/work-2.png', // Correct path
-        link: 'https://cmpsimranb.zya.me/?i=1',
-    },
-    {
-        title: 'BuyDirect E-commerce Platform',
-        description: 'Secure platform, modular shop management, and responsive design.',
-        bgImage: '/work-3.png', // Correct path
-        link: 'https://yourbuydirectplatform.com',
-    },
-    {
-        title: 'Agro Global Export',
-        description: 'Web-based system for managing export data of agricultural products with WordPress.',
-        bgImage: '/work-4.png', // Correct path
-        link: 'https://youragroexportplatform.com',
-    },
+  {
+    title: 'Responsive Portfolio Website',
+    description: 'Built a dynamic and responsive portfolio for showcasing projects',
+    bgImage: 'https://SimranBeedi.github.io/SimranBeedi/work-1.png',  // Correct URL format
+    link: 'https://yourportfolio.com',
+  },
+  {
+    title: 'Construction Material Portal',
+    description: 'A web app for managing construction, workers, and products.',
+    bgImage: 'https://SimranBeedi.github.io/SimranBeedi/work-2.png',  // Correct URL format
+    link: 'https://cmpsimranb.zya.me/?i=1',
+  },
+  {
+    title: 'BuyDirect E-commerce Platform',
+    description: 'Secure platform, modular shop management, and responsive design.',
+    bgImage: 'https://SimranBeedi.github.io/SimranBeedi/work-3.png',  // Correct URL format
+    link: 'https://yourbuydirectplatform.com',
+  },
+  {
+    title: 'Agro Global Export',
+    description: 'Web-based system for managing export data of agricultural products with WordPress.',
+    bgImage: 'https://SimranBeedi.github.io/SimranBeedi/work-4.png',  // Correct URL format
+    link: 'https://youragroexportplatform.com',
+  },
 ];
-
-
 
 export const serviceData = [
     { 
@@ -160,6 +159,7 @@ export const serviceData = [
         link: '' 
     },
 ];
+
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, PHP,Python,Flask,MYSQL ,BootStrap,  React Js, Next Js' },
