@@ -1,4 +1,4 @@
-import { assets, workData } from '@/assets/assets'; // Ensure the path is correct
+import { workData } from '@/assets/assets'; // Ensure workData is being imported correctly
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
@@ -53,7 +53,7 @@ const Work = ({ isDarkMode }) => {
             transition={{ duration: 0.3 }}
             key={index}
             className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-            style={{ backgroundImage: `url(${project.bgImage})` }}
+            style={{ backgroundImage: `url(${project.bgImage})` }}  // Using bgImage directly
           >
             {/* Project Details */}
             <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
@@ -77,11 +77,11 @@ const Work = ({ isDarkMode }) => {
                 aria-label="Send icon"
               >
                 <Image
-                  src={assets.send_icon || '/assets/send_icon.svg'}  // Fallback path
+                  src="/assets/send_icon.svg"  // Fixed path for send icon
                   alt="send_icon"
                   className="w-5"
-                  width={24}  // Optional width
-                  height={24} // Optional height
+                  width={24}
+                  height={24}
                 />
               </div>
             </div>
@@ -99,11 +99,11 @@ const Work = ({ isDarkMode }) => {
       >
         Show more
         <Image
-          src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold}
+          src={isDarkMode ? '/assets/right_arrow_bold_dark.svg' : '/assets/right_arrow_bold.svg'} // Correct path for arrows
           alt="Right arrow"
           className="w-4"
-          width={16}  // Optional width
-          height={16} // Optional height
+          width={16}
+          height={16}
         />
       </motion.a>
     </motion.div>
