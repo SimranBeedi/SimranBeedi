@@ -104,7 +104,7 @@ export const workData = [
     {
         title: 'Responsive Portfolio Website',
         description: 'Built a dynamic and responsive portfolio for showcasing projects',
-        bgImage: `${process.env.PUBLIC_URL}/work-1.png`, // ✅ Use PUBLIC_URL in React
+        bgImage: `${process.env.PUBLIC_URL}/work-1.png`, // Correct usage for React
         link: 'https://yourportfolio.com',
     },
     {
@@ -126,6 +126,7 @@ export const workData = [
         link: 'https://youragroexportplatform.com',
     },
 ];
+
 
 export const serviceData = [
     { 
