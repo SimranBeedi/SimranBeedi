@@ -100,31 +100,32 @@ export const assets = {
 };
 
 export const workData = [
-  {
-    title: 'Responsive Portfolio Website',
-    description: 'Built a dynamic and responsive portfolio for showcasing projects',
-    bgImage: '/work-1.png', // Correct path to your public directory image
-    link: 'https://yourportfolio.com',
-  },
-  {
-    title: 'Construction Material Portal',
-    description: 'A web app for managing construction, workers, and products.',
-    bgImage: '/work-2.png',
-    link: 'https://cmpsimranb.zya.me/?i=1',
-  },
-  {
-    title: 'BuyDirect E-commerce Platform',
-    description: 'Secure platform, modular shop management, and responsive design.',
-    bgImage: '/work-3.png',
-    link: 'https://yourbuydirectplatform.com',
-  },
-  {
-    title: 'Agro Global Export',
-    description: 'Web-based system for managing export data of agricultural products with WordPress.',
-    bgImage: '/work-4.png',
-    link: 'https://youragroexportplatform.com',
-  },
+    {
+        title: 'Responsive Portfolio Website',
+        description: 'Built a dynamic and responsive portfolio for showcasing projects',
+        bgImage: '/work-1.png', // Correct path
+        link: 'https://yourportfolio.com',
+    },
+    {
+        title: 'Construction Material Portal',
+        description: 'A web app for managing construction, workers, and products.',
+        bgImage: '/work-2.png', // Correct path
+        link: 'https://cmpsimranb.zya.me/?i=1',
+    },
+    {
+        title: 'BuyDirect E-commerce Platform',
+        description: 'Secure platform, modular shop management, and responsive design.',
+        bgImage: '/work-3.png', // Correct path
+        link: 'https://yourbuydirectplatform.com',
+    },
+    {
+        title: 'Agro Global Export',
+        description: 'Web-based system for managing export data of agricultural products with WordPress.',
+        bgImage: '/work-4.png', // Correct path
+        link: 'https://youragroexportplatform.com',
+    },
 ];
+
 
 
 export const serviceData = [
