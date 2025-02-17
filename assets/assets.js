@@ -102,36 +102,30 @@ export const assets = {
 
 export const workData = [
     {
-        
-            title: 'Responsive Portfolio Website',
-            description: 'Built a dynamic and responsive portfolio for showcasing projects',
-            bgImage: '/work-1.png',
-            link: 'https://yourportfolio.com', // Replace with your live project or GitHub repo link
-          
-          
+        title: 'Responsive Portfolio Website',
+        description: 'Built a dynamic and responsive portfolio for showcasing projects',
+        bgImage: `${process.env.PUBLIC_URL}/work-1.png`, // ✅ Use PUBLIC_URL in React
+        link: 'https://yourportfolio.com',
     },
     {
         title: 'Construction Material Portal',
-        description: 'A  web app for managing construction , workers and products. .',
-          bgImage: '/work-2.png',
-        link: 'https://cmpsimranb.zya.me/?i=1', // Replace with live project or GitHub link
-     
+        description: 'A web app for managing construction, workers, and products.',
+        bgImage: `${process.env.PUBLIC_URL}/work-2.png`,
+        link: 'https://cmpsimranb.zya.me/?i=1',
     },
     {
         title: 'BuyDirect E-commerce Platform',
         description: 'Secure platform, modular shop management, and responsive design.',
-        bgImage: '/work-3.png',
-        link: 'https://yourbuydirectplatform.com', // Replace with your project link
-      },
-      
+        bgImage: `${process.env.PUBLIC_URL}/work-3.png`,
+        link: 'https://yourbuydirectplatform.com',
+    },
     {
         title: 'Agro Global Export',
-  description: 'Web-based system for managing export data of agricultural products with WordPress.',
-  bgImage: '/work-4.png',
-  link: 'https://youragroexportplatform.com', // Replace with your project link
-
+        description: 'Web-based system for managing export data of agricultural products with WordPress.',
+        bgImage: `${process.env.PUBLIC_URL}/work-4.png`,
+        link: 'https://youragroexportplatform.com',
     },
-]
+];
 
 export const serviceData = [
     { 
