@@ -87,11 +87,12 @@ const Header = () => {
           Contact Me
           <Image src={assets.right_arrow_white || "/fallback-arrow.png"} alt="Right Arrow" className="inline-block w-4 ml-2" />
         </motion.a>
- <motion.a
+
+
+        <motion.a
   {...animationSettings}
   transition={{ ...animationSettings.transition, delay: 1.2 }}
- href="/SimranBeedi/simran_resume.pdf"
-
+  href="/simran_resume.pdf"  // Correct path for Next.js
   download="simran_resume.pdf"
   className="inline-block px-6 py-3 border border-gray-300 rounded-full bg-white dark:text-black"
 >
