@@ -1,4 +1,5 @@
-import { assets, workData } from '@/assets/assets'; // Ensure the path is correct
+// Work.js
+import { assets, workData } from '@/assets/assets'; // Correct import path
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
@@ -53,7 +54,7 @@ const Work = ({ isDarkMode }) => {
             transition={{ duration: 0.3 }}
             key={index}
             className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-            style={{ backgroundImage: `url(${project.bgImage})` }}  // Use relative path
+            style={{ backgroundImage: `url(${project.bgImage})` }}  // Updated for your direct public folder paths
           >
             {/* Project Details */}
             <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
@@ -76,7 +77,7 @@ const Work = ({ isDarkMode }) => {
                 aria-label="Send icon"
               >
                 <Image
-                  src={assets.send_icon} // Ensure `send_icon` exists in `assets`
+                  src={assets.send_icon} // Make sure `send_icon` exists in `public`
                   alt="send_icon"
                   className="w-5"
                 />
