@@ -1,5 +1,4 @@
-import user_image from './user-ima
-ge.png';
+import user_image from './user-image.png';
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
@@ -42,20 +41,17 @@ import github from './github.png';
 import python from './python.png';
 import xampp from './xampp.png';
 import fullstack from './fullstack.png';
-
 import database from './database.png';
-
 import frontend_icon from './frontend_icon.png';
-
 import backend_icon from './backend_icon.png';
 import wordpress from './wordpress.png';
 import bootstrap from './bootstrap.png';
+
 export const assets = {
     user_image,
     database,
     mysql,
     frontend_icon,
-    
     sampleresume: "/resume.pdf", 
     backend_icon,
     python,
@@ -103,7 +99,6 @@ export const assets = {
     right_arrow_bold_dark
 };
 
-
 export const workData = [
     {
         title: 'Responsive Portfolio Website',
@@ -130,7 +125,6 @@ export const workData = [
         link: 'https://youragroexportplatform.com',
     },
 ];
-
 
 export const serviceData = [
     { 
@@ -164,7 +158,6 @@ export const serviceData = [
         link: '' 
     },
 ];
-
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, PHP,Python,Flask,MYSQL ,BootStrap,  React Js, Next Js' },
