@@ -78,18 +78,18 @@ const Header = () => {
       {/* Action Buttons */}
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <motion.a
-          {...animationSettings}
-          transition={{ ...animationSettings.transition, delay: 1 }} // Add delay
-          href="#contact"
-          className="inline-block px-6 py-3 border border-gray-300 rounded-full mr-4 dark:bg-transparent"
-        >
-          Contact Me
-           <Image
-          src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold}
-          alt="Right arrow"
-          className="w-4"
-        />
-        </motion.a>
+    {...animationSettings}
+    transition={{ ...animationSettings.transition, delay: 1 }}
+    href="#contact"
+    className="w-max flex items-center justify-center gap-2 border border-gray-300 rounded-full px-6 py-3 dark:bg-transparent hover:bg-gray-100 dark:hover:bg-darkHover duration-500"
+  >
+    Contact Me
+    <Image
+      src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold}
+      alt="Right arrow"
+      className="w-4"
+    />
+  </motion.a>
      <motion.a
   {...animationSettings}
   transition={{ ...animationSettings.transition, delay: 1.2 }}
