@@ -9,6 +9,11 @@ const Header = () => {
   const typingSpeed = 100; // Typing speed in milliseconds
   const charIndexRef = useRef(0); // Ref to track character index without causing re-renders
 
+  // Define isDarkMode (Fallback for undefined cases)
+  const isDarkMode =
+    typeof window !== "undefined" &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches;
+
   useEffect(() => {
     const typeText = () => {
       if (charIndexRef.current <= textToType.length) {
@@ -77,30 +82,34 @@ const Header = () => {
 
       {/* Action Buttons */}
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
+        
+        {/* Contact Me Button */}
         <motion.a
-    {...animationSettings}
-    transition={{ ...animationSettings.transition, delay: 1 }}
-    href="#contact"
-    className="w-max flex items-center justify-center gap-2 border border-gray-300 rounded-full px-6 py-3 dark:bg-transparent hover:bg-gray-100 dark:hover:bg-darkHover duration-500"
-  >
-    Contact Me
-    <Image
-      src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold}
-      alt="Right arrow"
-      className="w-4"
-    />
-  </motion.a>
-     <motion.a
-  {...animationSettings}
-  transition={{ ...animationSettings.transition, delay: 1.2 }}
-  href="https://simranbeedi.github.io/SimranBeedi/simran_resume.pdf"
-  download="simran_resume.pdf"  // This is the key part for downloading
-  className="inline-block px-6 py-3 border border-gray-300 rounded-full bg-white dark:text-black"
->
-  Download Resume
-  <Image src={assets.download_icon || "/fallback-download.png"} alt="Download Icon" className="inline-block w-4 ml-2" />
-</motion.a>
+          {...animationSettings}
+          transition={{ ...animationSettings.transition, delay: 1 }}
+          href="#contact"
+          className="w-max flex items-center justify-center gap-2 border border-gray-300 rounded-full px-6 py-3 dark:bg-transparent hover:bg-gray-100 dark:hover:bg-darkHover duration-500"
+        >
+          Contact Me
+          <Image
+            src={(isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold) || "/fallback-arrow.png"}
+            alt="Right arrow"
+            className="w-4"
+          />
+        </motion.a>
 
+        {/* Download Resume Button */}
+        <motion.a
+          {...animationSettings}
+          transition={{ ...animationSettings.transition, delay: 1.2 }}
+          href="https://simranbeedi.github.io/SimranBeedi/simran_resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-6 py-3 border border-gray-300 rounded-full bg-white dark:text-black"
+        >
+          Download Resume
+          <Image src={assets.download_icon || "/fallback-download.png"} alt="Download Icon" className="inline-block w-4 ml-2" />
+        </motion.a>
 
       </div>
     </div>
