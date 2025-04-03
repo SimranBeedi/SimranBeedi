@@ -35,9 +35,7 @@ const Work = ({ isDarkMode }) => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
       >
-        "Welcome to my portfolio, where creativity meets functionality. Each project showcases my
-        commitment to delivering innovative and user-friendly designs that leave a lasting
-        impression."
+       Explore my projects, where innovation and functionality come together. Each project highlights my expertise in building user-friendly and scalable web applications
       </motion.p>
 
       {/* Projects Grid */}
