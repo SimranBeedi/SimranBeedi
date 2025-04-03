@@ -117,7 +117,7 @@ export const workData = [
     title: 'BuyDirect E-commerce Platform',
     description: 'Secure platform, modular shop management, and responsive design.',
     bgImage: 'https://SimranBeedi.github.io/SimranBeedi/work-3.png',  // Correct URL format
-    link: 'https://yourbuydirectplatform.com',
+    link: 'https://buydirect.pythonanywhere.com',
   },
   {
     title: 'Agro Global Export',
