@@ -119,12 +119,7 @@ export const workData = [
     bgImage: 'https://SimranBeedi.github.io/SimranBeedi/work-3.png',  // Correct URL format
     link: 'https://buydirect.pythonanywhere.com',
   },
-  {
-    title: 'Agro Global Export',
-    description: 'Web-based system for managing export data of agricultural products with WordPress.',
-    bgImage: 'https://SimranBeedi.github.io/SimranBeedi/work-4.png',  // Correct URL format
-    link: 'https://youragroexportplatform.com',
-  },
+  
 ];
 
 export const serviceData = [
@@ -164,7 +159,7 @@ export const serviceData = [
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, PHP,Python,Flask,MYSQL ,BootStrap,  React Js, Next Js' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Master of Computer Applications' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built  5 projects' }
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Successfully developed 3 projects' }
 ];
 
 export const toolsData = [
