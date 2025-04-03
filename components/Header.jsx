@@ -84,7 +84,11 @@ const Header = () => {
           className="inline-block px-6 py-3 border border-gray-300 rounded-full mr-4 dark:bg-transparent"
         >
           Contact Me
-          <Image src={assets.right_arrow_black || "/fallback-arrow.png"} alt="Right Arrow" className="inline-block w-4 ml-2" />
+           <Image
+          src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold}
+          alt="Right arrow"
+          className="w-4"
+        />
         </motion.a>
      <motion.a
   {...animationSettings}
