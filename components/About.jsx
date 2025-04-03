@@ -58,7 +58,7 @@ const About = ({ isDarkMode }) => {
           className="flex-1"
         >
           <p className="mb-10 max-w-2xl font-Ovo">
-            I am a developer with expertise in front-end and back-end technologies. I create engaging and visually appealing web applications.
+            As a passionate full-stack developer, I specialize in creating web applications using modern technologies like PHP, Python, Flask, React, and MySQL
           </p>
 
           {/* Info List */}
